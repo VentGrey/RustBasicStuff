@@ -1,4 +1,5 @@
 use std::io;
+use std::i32;
 
 fn main() {
     //Entrada 0
@@ -34,6 +35,9 @@ fn main() {
     if d == 0 {
         panic!("El divisor no puede ser cero!");
     }
+
+    println!("El resultado de la primera fracción es: {}",( ((a - c, 2).pow(2)) / d));
+    println!("El resultado de la segunda fracción es: {}",( ((a - b, 2) ).pow(2) / d));
 
 
 }
