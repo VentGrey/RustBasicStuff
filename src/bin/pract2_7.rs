@@ -11,12 +11,21 @@ NUM1, NUM2 variables de tipo entero.
 use std::io;
 
 fn main() {
-	let mut entrada = String::new();
-	println!("Ingrese el primer número");
-	io::stdin().read_line(&mut entrada).unwrap();
+        let mut entrada = String::new();
+        println!("Ingrese el primer número");
+        io::stdin().read_line(&mut entrada).unwrap();
 
-	let num1:f64 = entrada.parse().unwrap();
+        let num1:i32 = entrada.parse().unwrap();
 
-	entrada = String::new();
-	
+        let mut entrada2 = String::new();
+	println!("Ingrese el segundo número");
+        io::stdin().read_line(&mut entrada2).unwrap();
+
+        let num2:i32 = entrada2.parse().unwrap();
+
+        if num1 % num2 == 0.0 {
+                println!("Los números son divisibles");
+        } else {
+            panic!("Los numeros no son divisibles");
+        }
 }
