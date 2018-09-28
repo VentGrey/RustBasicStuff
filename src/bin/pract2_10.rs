@@ -21,13 +21,16 @@ fn main() {
     let num1:f64 = entrada.parse().unwrap();
     let num2:f64 = entrada1.parse().unwrap();
 
-    let mut operador = io::stdin().read_line(&mut operador).unwrap();
+    let mut entrada2 = String::new();
+    io::stdin().read_line(&mut entrada2).unwrap();
+
+    let operador:char = entrada.parse().unwrap();
 
     match operador {
-        '+' => println!("La suma de los números es: {}", num1 + num2);
-        '-' => println!("La diferencia de los números es: {}", num1 - num2);
-        '*' => println!("El producto resultante es: {}", num1 * num2);
-        '/' => println!("La división resultante es: {}", num1 / num2);
-        _ => println!("Ingrese un operador válido");
+        '+' => println!("La suma de los números es: {}", num1 + num2),
+        '-' => println!("La diferencia de los números es: {}", num1 - num2),
+        '*' => println!("El producto resultante es: {}", num1 * num2),
+        '/' => println!("La división resultante es: {}", num1 / num2),
+        _ => println!("Ingrese un operador válido"),
     }
 }
