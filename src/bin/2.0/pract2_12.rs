@@ -16,11 +16,33 @@
    ra conversión.
 
 Consideraciones
-1 pulgada equivale a 25.40 milı́metros.
+1 pulgada equivale a 25.40 milímetros.
 1 yarda equivale a 0.9144 metros.
 1 milla equivale a 1.6093 kilómetros.
 */
 
+use std::io;
+
 fn main() {
-    
+    let mut entrada = String::new();
+    println!("Ingrese la cantidad de unidades que desea convertir");
+    io::stdin().read_line(&mut entrada).unwrap();
+
+    let med:f64 = entrada.parse().unwrap();
+
+    let mut entrada1 = String::new();
+    println!("Ingrese la conversión deseada: ");
+    println!("1° Pulgadas a Milímetros");
+    println!("2° Yardas a Metros");
+    println!("3° Millas a Kilómetros");
+    io::stdin().read_line(&mut entrada1).unwrap();
+
+    let op:i8 = entrada1.parse().unwrap();
+
+    match op {
+        1 => println!("{} Pulgadas equivalen a {} Milímetros", med, med * 25.40),
+        2 => println!("{} Yardas equivalen a {} Metros", med, med * 0.9144),
+        3 => println!("{} Millas equivalen a {} Kilómetros", med, med * 1.6093),
+        _ => panic!("ingrese un operador válido!"),
+    }
 }
