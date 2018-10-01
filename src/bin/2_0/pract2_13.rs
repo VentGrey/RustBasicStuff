@@ -30,63 +30,78 @@ fn main() {
                 if mins >= 3.0 {
                     precio = 2.0;
                     precio = precio * mins;
+                    println!("Su importe total es de: ${} pesos", precio);
                 } else if mins <= 4.0 {
                     precio = 1.5;
                     precio = precio * mins;
+                    println!("Su importe total es de: ${} pesos", precio);
+                } else {
+                    panic!("Ocurrió un eror!");
                 }
         }
         15 => {
                 if mins >= 3.0 {
                     precio = 2.2;
                     precio = precio * mins;
+                    println!("Su importe total es de: ${} pesos", precio);
                 } else if mins <= 4.0 {
                     precio = 1.8;
                     precio = precio * mins;
+                    println!("Su importe total es de: ${} pesos", precio);
+                } else {
+                    panic!("Ocurrió un eror!");
                 }
         }
         18 => {
                 if mins >= 3.0 {
                     precio = 4.5;
                     precio = precio * mins;
+                    println!("Su importe total es de: ${} pesos", precio);
                 } else if mins <= 4.0 {
                     precio = 3.5;
                     precio = precio * mins;
+                    println!("Su importe total es de: ${} pesos", precio);
+                } else {
+                    panic!("Ocurrió un eror!");
                 }
         }
         19 => {
                 if mins >= 3.0 {
                     precio = 3.5;
                     precio = precio * mins;
+                    println!("Su importe total es de: ${} pesos", precio);
                 } else if mins <= 4.0 {
                     precio = 2.7;
                     precio = precio * mins;
+                    println!("Su importe total es de: ${} pesos", precio);
+                } else {
+                    panic!("Ocurrió un eror!");
                 }
         }
-        23 => {
+        23 | 25 => {
                 if mins >= 3.0 {
                     precio = 6.0;
                     precio = precio * mins;
+                    println!("Su importe total es de: ${} pesos", precio);
                 } else if mins <= 4.0 {
                     precio = 4.6;
                     precio = precio * mins;
-                }
-        }
-        25 => {
-                if mins >= 3.0 {
-                    precio = 6.0;
-                    precio = precio * mins;
-                } else if mins <= 4.0 {
-                    precio = 4.6;
-                    precio = precio * mins;
+                    println!("Su importe total es de: ${} pesos", precio);
+                } else {
+                    panic!("Ocurrió un eror!");
                 }
         }
         29 => {
                 if mins >= 3.0 {
                     precio = 5.0;
                     precio = precio * mins;
+                    println!("Su importe total es de: ${} pesos", precio);
                 } else if mins <= 4.0 {
                     precio = 3.9;
                     precio = precio * mins;
+                    println!("Su importe total es de: ${} pesos", precio);
+                } else {
+                    panic!("Ocurrió un eror!");
                 }
         }
         _ => panic!("Ingrese una opción válida!");
