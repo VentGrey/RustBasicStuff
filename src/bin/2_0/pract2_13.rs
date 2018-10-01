@@ -23,70 +23,73 @@ fn main() {
 
     //Desmadre de llaves incoming
     //Brace yourselves!
+    //
+    //MAS DE 3 NIVELES DE INDENT! El código está mal :(
     match clave {
         12 => {
-            if mins >= 3.0 {
-                precio = 2.0;
-                precio = precio * mins;
-            } else if mins <= 4.0 {
-                precio = 1.5;
-                precio = precio * mins;
-            }
+                if mins >= 3.0 {
+                    precio = 2.0;
+                    precio = precio * mins;
+                } else if mins <= 4.0 {
+                    precio = 1.5;
+                    precio = precio * mins;
+                }
         }
         15 => {
-            if mins >= 3.0 {
-                precio = 2.2;
-                precio = precio * mins;
-            } else if mins <= 4.0 {
-                precio = 1.8;
-                precio = precio * mins;
-            }
+                if mins >= 3.0 {
+                    precio = 2.2;
+                    precio = precio * mins;
+                } else if mins <= 4.0 {
+                    precio = 1.8;
+                    precio = precio * mins;
+                }
         }
         18 => {
                 if mins >= 3.0 {
                     precio = 4.5;
                     precio = precio * mins;
                 } else if mins <= 4.0 {
-                precio = 3.5;
-                precio = precio * mins;
-            }
+                    precio = 3.5;
+                    precio = precio * mins;
+                }
         }
         19 => {
                 if mins >= 3.0 {
                     precio = 3.5;
                     precio = precio * mins;
-            } else if mins <= 4.0 {
+                } else if mins <= 4.0 {
                     precio = 2.7;
                     precio = precio * mins;
-            }
+                }
         }
         23 => {
                 if mins >= 3.0 {
-                precio = 6.0;
-                precio = precio * mins;
-            } else if mins <= 4.0 {
-                precio = 4.6;
-                precio = precio * mins;
-            }
+                    precio = 6.0;
+                    precio = precio * mins;
+                } else if mins <= 4.0 {
+                    precio = 4.6;
+                    precio = precio * mins;
+                }
         }
         25 => {
                 if mins >= 3.0 {
                     precio = 6.0;
                     precio = precio * mins;
-            } else if mins <= 4.0 {
+                } else if mins <= 4.0 {
                     precio = 4.6;
                     precio = precio * mins;
-            }
+                }
         }
         29 => {
                 if mins >= 3.0 {
-                    precio = 3.5;
+                    precio = 5.0;
                     precio = precio * mins;
-            } else if mins <= 4.0 {
-                    precio = 2.7;
+                } else if mins <= 4.0 {
+                    precio = 3.9;
                     precio = precio * mins;
-            }
+                }
         }
+        _ => panic!("Ingrese una opción válida!");
 
     }
 }
