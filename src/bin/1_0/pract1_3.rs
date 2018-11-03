@@ -8,12 +8,12 @@ fn main() {
     //Variable de asignación
     let base: f64 = entrada.trim().parse().unwrap();
 
-    let mut entrada2 = String::new();
+    let mut entrada_2 = String::new();
     println!("Ingrese la altura del triángulo / aporema del pentágono");
-    io::stdin().read_line(&mut entrada2).unwrap();
+    io::stdin().read_line(&mut entrada_2).unwrap();
 
     //Variable de asignación
-    let altura: f64 = entrada2.trim().parse().unwrap();
+    let altura: f64 = entrada_2.trim().parse().unwrap();
 
     //Hacer las operaciones de las prácticas
     println!("El área del triángulo es: {}", (base * altura) / 2.0);

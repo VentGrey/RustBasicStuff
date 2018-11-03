@@ -14,11 +14,11 @@ fn main() {
     io::stdin().read_line(&mut entrada).unwrap();
     let clave:i16 = entrada.parse().unwrap();
 
-    let mut entrada2 = String::new();
+    let mut entrada_2 = String::new();
     println!("Ingrese el número de minutos de la llamada");
-    io::stdin().read_line(&mut entrada2).unwrap();
+    io::stdin().read_line(&mut entrada_2).unwrap();
 
-    let mins:f64 = entrada2.parse().unwrap();
+    let mins:f64 = entrada_2.parse().unwrap();
     let mut precio:f64 = 0.0;
 
     //Desmadre de llaves incoming

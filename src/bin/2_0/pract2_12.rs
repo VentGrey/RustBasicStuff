@@ -30,14 +30,14 @@ fn main() {
 
     let med:f64 = entrada.parse().unwrap();
 
-    let mut entrada1 = String::new();
+    let mut entrada_1 = String::new();
     println!("Ingrese la conversión deseada: ");
     println!("1° Pulgadas a Milímetros");
     println!("2° Yardas a Metros");
     println!("3° Millas a Kilómetros");
-    io::stdin().read_line(&mut entrada1).unwrap();
+    io::stdin().read_line(&mut entrada_1).unwrap();
 
-    let op:i8 = entrada1.parse().unwrap();
+    let op:i8 = entrada_1.parse().unwrap();
 
     match op {
         1 => println!("{} Pulgadas equivalen a {} Milímetros", med, med * 25.40),

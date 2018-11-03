@@ -11,17 +11,17 @@ fn main() {
 
     let num1:f64 = entrada.parse().unwrap()
 
-    let mut entrada1 = String::new();
+    let mut entrada_1 = String::new();
     println!("Ingrese el segundo número");
-    io::stdin().read_line(&mut entrada1).unwrap();
+    io::stdin().read_line(&mut entrada_1).unwrap();
 
-    let num2:f64 = entrada1.parse().unwrap()
+    let num2:f64 = entrada_1.parse().unwrap()
 
-    let mut entrada2 = String::new();
+    let mut entrada_2 = String::new();
     println!("Ingrese el tercer número");
-    io::stdin().read_line(&mut entrada2).unwrap();
+    io::stdin().read_line(&mut entrada_2).unwrap();
 
-    let num3:f64 = entrada2.parse().unwrap()
+    let num3:f64 = entrada_2.parse().unwrap()
 
     if num1 > num2 && num1 > num3 {
         println!("El número {} es mayor que {} y {}", num1, num2, num3);

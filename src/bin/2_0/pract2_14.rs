@@ -22,11 +22,11 @@ fn main() {
 
     let credencial:i8 = entrada.parse().unwrap();
 
-    let mut entrada2 = String::new();
+    let mut entrada_2 = String::new();
     println!("Ingrese el monto en tu ticket");
-    io::stdin().read_line(&mut entrada2).unwrap();
+    io::stdin().read_line(&mut entrada_2).unwrap();
 
-    let monto:f64 = entrada2.parse().unwrap();
+    let monto:f64 = entrada_2.parse().unwrap();
 
     match credencial {
         1 => println!("Su monto a pagar es de: ${}", monto - (monto * 0.35)),

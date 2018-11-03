@@ -9,11 +9,11 @@ fn main() {
     let num1: f64 = entrada.trim().parse().unwrap();
 
     //Procesamiento de la segunda variable
-    let mut entrada2 = String::new();
+    let mut entrada_2 = String::new();
     println!("\nIngrese el segundo número");
-    io::stdin().read_line(&mut entrada2).unwrap();
+    io::stdin().read_line(&mut entrada_2).unwrap();
 
-    let num2: f64 = entrada2.trim().parse().unwrap();
+    let num2: f64 = entrada_2.trim().parse().unwrap();
 
     println!("La suma de los números es: {}", num1 + num2);
     println!("La multiplicación de los números es: {}", num1 * num2);

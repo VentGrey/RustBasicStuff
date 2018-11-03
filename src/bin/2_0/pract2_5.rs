@@ -9,11 +9,11 @@ fn main() {
 
     let mut km:f64 = entrada.parse().unwrap();
 
-    let mut entrada1 = String::new();
+    let mut entrada_1 = String::new();
     println!("* Ingrese el tiempo de estancia *");
-    io::stdin().read_line(&mut entrada1).unwrap();
+    io::stdin().read_line(&mut entrada_1).unwrap();
 
-    let dias:i32 = entrada1.parse().unwrap();
+    let dias:i32 = entrada_1.parse().unwrap();
 
     if dias <= 0 || km <=  0.0 {
         panic!("._. ¿entonces para que quieres viajar?");
