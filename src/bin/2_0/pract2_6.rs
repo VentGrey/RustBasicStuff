@@ -15,11 +15,11 @@ Datos
 use std::io;
 
 fn main() {
-    let mut entrada = String::new();
+    let mut input = String::new();
     println!("Ingrese el sueldo del trabajador");
-    io::stdin().read_line(&mut entrada).unwrap();
+    io::stdin().read_line(&mut input).unwrap();
 
-    let mut sueldo:f64 = entrada.parse().unwrap();
+    let mut sueldo:f64 = input.parse().unwrap();
 
     if sueldo < 10000.00 {
     	sueldo = sueldo * 1.15;

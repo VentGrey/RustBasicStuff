@@ -12,22 +12,22 @@ Opel-Astra   |   9%
 use std::io;
 
 fn main() {
-    let mut entrada = String::new();
+    let mut input = String::new();
     println!("Ingrese el precio del vehículo");
-    io::stdin().read_line(&mut entrada).unwrap();
+    io::stdin().read_line(&mut input).unwrap();
 
-    let prec:f64 = entrada.parse().unwrap();
+    let prec:f64 = input.parse().unwrap();
 
 
-    let mut entrada_1 = String::new();
+    let mut input_1 = String::new();
     println!("Ingrese el tipo de vehículo que desea");
     println!("1° Blazer-Trail");
     println!("2° Cavallier");
     println!("3° Chevy");
     println!("4° Opel-Astra");
-    io::stdin().read_line(&mut entrada_1).unwrap();
+    io::stdin().read_line(&mut input_1).unwrap();
 
-    let op:u8 = entrada_1.parse().unwrap();
+    let op:u8 = input_1.parse().unwrap();
 
     match op {
         1 => println!("El precio del vehículo es: ${}", prec - (prec * 0.08)),

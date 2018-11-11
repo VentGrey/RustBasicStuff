@@ -14,11 +14,11 @@ Marcha   |      Temperatura ≤ 10|
 use std::io;
 
 fn main() {
-    let mut entrada = String::new();
+    let mut input = String::new();
     println!("Ingrese la temperatura actual");
-    io::stdin().read_line(&mut entrada).unwrap();
+    io::stdin().read_line(&mut input).unwrap();
 
-    let temperatura:f64 = entrada.parse().unwrap();
+    let temperatura:f64 = input.parse().unwrap();
 
     if temperatura > 85.00 {
         println!("Deberías practicar natación");

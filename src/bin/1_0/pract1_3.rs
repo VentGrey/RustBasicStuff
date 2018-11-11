@@ -1,19 +1,19 @@
 use std::io;
 
 fn main() {
-    let mut entrada = String::new();
+    let mut input = String::new();
     println!("Ingrese la base del triángulo / lado del pentágono");
-    io::stdin().read_line(&mut entrada).unwrap();
+    io::stdin().read_line(&mut input).unwrap();
 
     //Variable de asignación
-    let base: f64 = entrada.trim().parse().unwrap();
+    let base: f64 = input.trim().parse().unwrap();
 
-    let mut entrada_2 = String::new();
+    let mut input_2 = String::new();
     println!("Ingrese la altura del triángulo / aporema del pentágono");
-    io::stdin().read_line(&mut entrada_2).unwrap();
+    io::stdin().read_line(&mut input_2).unwrap();
 
     //Variable de asignación
-    let altura: f64 = entrada_2.trim().parse().unwrap();
+    let altura: f64 = input_2.trim().parse().unwrap();
 
     //Hacer las operaciones de las prácticas
     println!("El área del triángulo es: {}", (base * altura) / 2.0);

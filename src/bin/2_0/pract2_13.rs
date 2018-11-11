@@ -1,7 +1,7 @@
 use std::io;
 
 fn main() {
-    let mut entrada = String::new();
+    let mut input = String::new();
 
     println!("Ingrese la clave de región a donde desea llamar");
     println!("12 - - América del Norte");
@@ -11,14 +11,14 @@ fn main() {
     println!("23 - - Asia");
     println!("25 - - Africa");
     println!("29 - - Oceanía");
-    io::stdin().read_line(&mut entrada).unwrap();
-    let clave:i16 = entrada.parse().unwrap();
+    io::stdin().read_line(&mut input).unwrap();
+    let clave:i16 = input.parse().unwrap();
 
-    let mut entrada_2 = String::new();
+    let mut input_2 = String::new();
     println!("Ingrese el número de minutos de la llamada");
-    io::stdin().read_line(&mut entrada_2).unwrap();
+    io::stdin().read_line(&mut input_2).unwrap();
 
-    let mins:f64 = entrada_2.parse().unwrap();
+    let mins:f64 = input_2.parse().unwrap();
     let mut precio:f64 = 0.0;
 
     //Desmadre de llaves incoming

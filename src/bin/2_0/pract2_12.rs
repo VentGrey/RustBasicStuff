@@ -24,20 +24,20 @@ Consideraciones
 use std::io;
 
 fn main() {
-    let mut entrada = String::new();
+    let mut input = String::new();
     println!("Ingrese la cantidad de unidades que desea convertir");
-    io::stdin().read_line(&mut entrada).unwrap();
+    io::stdin().read_line(&mut input).unwrap();
 
-    let med:f64 = entrada.parse().unwrap();
+    let med:f64 = input.parse().unwrap();
 
-    let mut entrada_1 = String::new();
+    let mut input_1 = String::new();
     println!("Ingrese la conversión deseada: ");
     println!("1° Pulgadas a Milímetros");
     println!("2° Yardas a Metros");
     println!("3° Millas a Kilómetros");
-    io::stdin().read_line(&mut entrada_1).unwrap();
+    io::stdin().read_line(&mut input_1).unwrap();
 
-    let op:i8 = entrada_1.parse().unwrap();
+    let op:i8 = input_1.parse().unwrap();
 
     match op {
         1 => println!("{} Pulgadas equivalen a {} Milímetros", med, med * 25.40),

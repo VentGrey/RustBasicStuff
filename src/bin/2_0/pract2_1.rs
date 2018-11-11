@@ -6,11 +6,11 @@ use std::process;
 
 fn main() {
 
-    let mut entrada = String::new();
+    let mut input = String::new();
     println!("Ingrese el valor del ángulo que desea");
-    io::stdin().read_line(&mut entrada).unwrap();
+    io::stdin().read_line(&mut input).unwrap();
 
-    let angulo: f64 = entrada.trim().parse().unwrap();
+    let angulo: f64 = input.trim().parse().unwrap();
 
     if angulo.cos() != 0.0 {
         let tang:f64 = angulo.sin() / angulo.cos();

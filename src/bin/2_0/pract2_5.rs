@@ -3,17 +3,17 @@ use std::io;
 fn main() {
     const P_KM:f64 = 0.23;
 
-    let mut entrada = String::new();
+    let mut input = String::new();
     println!("* Ingrese los km del viaje *");
-    io::stdin().read_line(&mut entrada).unwrap();
+    io::stdin().read_line(&mut input).unwrap();
 
-    let mut km:f64 = entrada.parse().unwrap();
+    let mut km:f64 = input.parse().unwrap();
 
-    let mut entrada_1 = String::new();
+    let mut input_1 = String::new();
     println!("* Ingrese el tiempo de estancia *");
-    io::stdin().read_line(&mut entrada_1).unwrap();
+    io::stdin().read_line(&mut input_1).unwrap();
 
-    let dias:i32 = entrada_1.parse().unwrap();
+    let dias:i32 = input_1.parse().unwrap();
 
     if dias <= 0 || km <=  0.0 {
         panic!("._. ¿entonces para que quieres viajar?");

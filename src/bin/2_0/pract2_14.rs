@@ -16,17 +16,17 @@ Observe que las categorías mayores a 4 no tienen descuento
 use std::io;
 
 fn main() {
-    let mut entrada = String::new();
+    let mut input = String::new();
     println!("Bienvenido al hospital, ingrese la categoría de su tarjeta");
-    io::stdin().read_line(&mut entrada).unwrap();
+    io::stdin().read_line(&mut input).unwrap();
 
-    let credencial:i8 = entrada.parse().unwrap();
+    let credencial:i8 = input.parse().unwrap();
 
-    let mut entrada_2 = String::new();
+    let mut input_2 = String::new();
     println!("Ingrese el monto en tu ticket");
-    io::stdin().read_line(&mut entrada_2).unwrap();
+    io::stdin().read_line(&mut input_2).unwrap();
 
-    let monto:f64 = entrada_2.parse().unwrap();
+    let monto:f64 = input_2.parse().unwrap();
 
     match credencial {
         1 => println!("Su monto a pagar es de: ${}", monto - (monto * 0.35)),

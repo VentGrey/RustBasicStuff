@@ -5,11 +5,11 @@
 use std::io;
 
 fn main() {
-    let mut entrada = String::new();
+    let mut input = String::new();
     println!("Ingrese la cantidad de números naturales que desea sumar: ");
-    io::stdin().read_line(&mut entrada).unwrap();
+    io::stdin().read_line(&mut input).unwrap();
 
-    let n:i64 = entrada.trim().parse().unwrap();
+    let n:i64 = input.trim().parse().unwrap();
     let mut sum:i64 = 0;
 
     for i in 0..n {
