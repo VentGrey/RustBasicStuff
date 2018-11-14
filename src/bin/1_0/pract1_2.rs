@@ -2,7 +2,7 @@ use std::io;
 
 fn main() {
     let mut input = String::new();
-    println!("Ingrese su nombre\n")
+    println!("Enter your first name\n")
     io::stdin().read_line(&mut input).unwrap();
 
 
