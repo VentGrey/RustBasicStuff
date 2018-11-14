@@ -5,13 +5,13 @@ fn main() {
     println!("Input your worker's salary");
     io::stdin().read_line(&mut input).unwrap();
 
-    let mut sueldo:f64 = input.trim().parse().unwrap();
+    let mut salary:f64 = input.trim().parse().unwrap();
 
-    if sueldo < 1000.00 {
-        sueldo = sueldo * 1.15;
-        print!("Your workers salary now is: ${}", sueldo);
+    if salary < 1000.00 {
+        salary = salary * 1.15;
+        print!("Your workers salary now is: ${}", salary);
     } else {
-        sueldo = sueldo * 1.12;
-        print!("Your workers salary now is: ${}", sueldo);
+        salary = salary * 1.12;
+        print!("Your workers salary now is: ${}", salary);
     }
 }
