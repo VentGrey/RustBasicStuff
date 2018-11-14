@@ -15,8 +15,13 @@ fn main() {
     if angle.cos() != 0.0 {
         let tang:f64 = angulo.sin() / angulo.cos();
         println!("Tangent is equal to: {}", tang);
+<<<<<<< HEAD
         if angle.sin() != 0.0 {
             let cot:f64 = angle.cos() / angle.sin();
+=======
+        if angulo.sin() != 0.0 {
+            let cot:f64 = angulo.cos() / angulo.sin();
+>>>>>>> ee6451a32f51e78b0d5f224424058e3ce9446565
             println!("Cotangent is equal to: {}", cot);
         } else {
             println!("Angle sin cannot be zero >:c");
