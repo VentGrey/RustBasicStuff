@@ -13,9 +13,9 @@ fn main() {
     io::stdin().read_line(&mut input_2).unwrap();
 
     //Variable de asignación
-    let altura: f64 = input_2.trim().parse().unwrap();
+    let height: f64 = input_2.trim().parse().unwrap();
 
     //Hacer las operaciones de las prácticas
-    println!("The triangle's area is: {}", (base * altura) / 2.0);
-    println!("The pentagon's area is: {}", (base * 5.0) * altura);
+    println!("The triangle's area is: {}", (base * height) / 2.0);
+    println!("The pentagon's area is: {}", (base * 5.0) * height);
 }

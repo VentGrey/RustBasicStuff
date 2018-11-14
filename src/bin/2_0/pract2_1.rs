@@ -7,23 +7,23 @@ use std::process;
 fn main() {
 
     let mut input = String::new();
-    println!("Ingrese el valor del ángulo que desea");
+    println!("Input some angle value");
     io::stdin().read_line(&mut input).unwrap();
 
     let angulo: f64 = input.trim().parse().unwrap();
 
     if angulo.cos() != 0.0 {
         let tang:f64 = angulo.sin() / angulo.cos();
-        println!("La tangente del ángulo es: {}", tang);
+        println!("Tangent is equal to: {}", tang);
         if angulo.sin() != 0.0 {
             let cot:f64 = angulo.cos() / angulo.sin();
-            println!("La cotangente del ángulo es: {}", cot);
+            println!("Cotangent is equal to: {}", cot);
         } else {
-            println!("El seno del ángulo debe ser diferente de 0");
+            println!("Angle sin cannot be zero >:c");
             process::exit(1);
         }
     } else {
-        println!("El coseno del ángulo debe de ser diferente de 0");
+        println!("Cosine must be different from zero >:c");
         process::exit(1);
     }
 }
