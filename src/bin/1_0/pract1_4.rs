@@ -7,8 +7,8 @@ fn main() {
     io::stdin().read_line(&mut input).unwrap();
 
     //Procesar el círculo
-    let radio:f64 = input.trim().parse().unwrap();
+    let radius:f64 = input.trim().parse().unwrap();
 
-    println!("Area of this circle is: {}", PI * radio * radio);
-    println!("Circumference is equal to: {}", PI * (radio * 2.0));
+    println!("Area of this circle is: {}", PI * radius * radius);
+    println!("Circumference is equal to: {}", PI * (radius * 2.0));
 }
