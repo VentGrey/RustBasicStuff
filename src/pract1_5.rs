@@ -1,6 +1,6 @@
 use std::io;
 
-fn main() {
+pub fn main() {
     const DOLAR:f64 = 19.29;
     
     let mut input = String::new();

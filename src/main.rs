@@ -1,6 +1,12 @@
 //---Modules spam, brace yourselves!
 //-- 1st Part Modules
 mod pract1_1;
+mod pract1_2;
+mod pract1_3;
+mod pract1_4;
+mod pract1_5;
+
+
 
 
 use std::io;
