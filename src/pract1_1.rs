@@ -4,7 +4,7 @@ numbers */
 
 use std::io;
 
-fn main() {
+pub fn main() {
     let mut scanner = String::new();
 
     io::stdin()
@@ -18,10 +18,8 @@ fn main() {
 
         },
         Err(e) => {
-
+            println!("Error: {}", e.to_string());
         },
-
-        _ => println!("No error reported");
     }
 }
 
