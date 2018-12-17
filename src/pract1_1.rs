@@ -14,13 +14,17 @@ pub fn main() {
     let num_1 = scanner.trim();
 
     match num_1.parse::<f64>() {
-        Ok(i) => {
-
-        },
+        Ok(i) => {}
         Err(e) => {
+            println!("This is not a number {}", num_1);
             println!("Error: {}", e.to_string());
-        },
+        }
     }
+
+    scanner = String::new();
+    io::stdin()
+        .read_line(&mut scanner)
+        .expect("Something went wrong when reading user input");
 }
 
 /*
