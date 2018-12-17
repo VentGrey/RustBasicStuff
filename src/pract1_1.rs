@@ -5,23 +5,24 @@ numbers */
 use std::io;
 
 fn main() {
-    //First Variable Processind
-    let mut input = String::new();
-    println!("Enter the first number");
+    let mut scanner = String::new();
 
-    io::stdin().read_line(&mut input).unwrap();
-    let num1: f64 = input.trim().parse().unwrap();
+    io::stdin()
+        .read_line(&mut scanner)
+        .expect("Something went wrong when reading user input");
 
-    //Procesamiento de la segunda variable
-    let mut input_2 = String::new();
-    println!("\nEnter the second number");
-    io::stdin().read_line(&mut input_2).unwrap();
+    let num_1 = scanner.trim();
 
-    let num2: f64 = input_2.trim().parse().unwrap();
+    match num_1.parse::<f64>() {
+        Ok(i) => {
 
-    println!("The sum of the previous numbers is: {}", num1 + num2);
-    println!("The product of the previous numbers is: {}", num1 * num2);
-    println!("The division of the previous numbers results in: {}", num1 / num2);
+        },
+        Err(e) => {
+
+        },
+
+        _ => println!("No error reported");
+    }
 }
 
 /*
