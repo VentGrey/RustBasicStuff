@@ -37,16 +37,16 @@ fn main() {
     //TODO: Add excecise names
     println!("------FIRST UNIT-----");
     println!("(1) 1.1 => Basic aritmethics [IN PROGRESS]");
-    println!("(2) 1.2 => Repeat your name 4 times [IN PROGRESS]");
-    println!("(3) 1.3 => Triangle/Pentagon formulas [IN PROGRESS]");
-    println!("(4) 1.4 => Circle formula [IN PROGRESS]");
-    println!("(5) 1.5 => Currency exchange [IN PROGRESS]");
+    println!("(2) 1.2 => Repeat your name 4 times [INCOMPLETE]");
+    println!("(3) 1.3 => Triangle/Pentagon formulas [INCOMPLETE]");
+    println!("(4) 1.4 => Circle formula [INCOMPLETE]");
+    println!("(5) 1.5 => Currency exchange [INCOMPLETE]");
     println!("------SECOND UNIT----");
-    println!("(6) 2.1 => Angle processing [IN PROGRESS]");
-    println!("(7) 2.2 => Basic money discount [IN PROGRESS]");
-    println!("(8) 2.3 => Basic worker's salary processing [IN PROGRESS]");
-    println!("(9) 2.4 => Floating point in fraction notation [IN PROGRESS]");
-    println!("(10) 2.5 => Basic train ticket system [IN PROGRESS]");
+    println!("(6) 2.1 => Angle processing [INCOMPLETE]");
+    println!("(7) 2.2 => Basic money discount [INCOMPLETE]");
+    println!("(8) 2.3 => Basic worker's salary processing [INCOMPLETE]");
+    println!("(9) 2.4 => Floating point in fraction notation [INCOMPLETE]");
+    println!("(10) 2.5 => Basic train ticket system [INCOMPLETE]");
     println!("(11) 2.6 => Worker salary conditionals [INCOMPLETE]");
     println!("(12) 2.7 => Are these two numbers divisible? [INCOMPLETE]");
     println!("(13) 2.8 => Sports practice suggestions [INCOMPLETE]");
