@@ -2,6 +2,8 @@
 and calculates the addition, substraction and division of both
 numbers */
 
+//TODO: Fix this user input methods
+
 use std::io;
 
 pub fn main() {
@@ -13,7 +15,7 @@ pub fn main() {
         .read_line(&mut scanner)
         .expect("Something went wrong when reading user input");
 
-    let mut num_1 = scanner.trim();
+    let mut num_1 = scanner.trim(); //FIXME: Not mutable
 
     match num_1.parse::<f64>() {
         Ok(num_1) => {
