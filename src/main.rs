@@ -58,6 +58,9 @@ fn main() {
     println!("(19) 2.14");
     println!("------THIRD UNIT-----");
     println!("(20) 3.1");
+    println!("------FOURTH UNIT----");
+    println!("------EXTRAS---------");
+    println!("----KEEP LEARNING----");
     //TODO: Add the whole sections
     println!("Please select your desired practice to execute:");
 
