@@ -15,7 +15,7 @@ que se le puedan dar al lenguaje.
 
 ## To Do
 
-- [] Hacer el repositorio interactivo para aquellos que deseen practicar.
-- [] Terminar las prácticas.
-- [] Crear un menú principal para correr las prácticas.
-- [] Crear un mdbook para quienes deseen aprender Rust con las prácticas.
+- [ ] Hacer el repositorio interactivo para aquellos que deseen practicar.
+- [ ] Terminar las prácticas.
+- [ ] Crear un menú principal para correr las prácticas.
+- [ ] Crear un mdbook para quienes deseen aprender Rust con las prácticas.
