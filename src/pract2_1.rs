@@ -3,6 +3,8 @@
 use std::io;
 use std::f64;
 
+
+
 fn main() {
 
     let mut input = String::new();
@@ -14,19 +16,16 @@ fn main() {
     if angle.cos() != 0.0 {
         let tang:f64 = angle.sin() / angle.cos();
         println!("Tangent is equal to: {}", tang);
-
+//FIXME: Curly braces mess
         if angle.sin() != 0.0 {
             let cot:f64 = angle.cos() / angle.sin();
-
+        }
         if angle.sin() != 0.0 {
             let cot:f64 = angle.cos() / angle.sin();
-
             println!("Cotangent is equal to: {}", cot);
         } else {
             panic!("Angle sin cannot be zero >:c");
-
-        }
-    } else {
+        } else {
         panic!("Cosine must be different from zero >:c");
 
     }
