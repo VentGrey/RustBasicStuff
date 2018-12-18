@@ -37,10 +37,10 @@ fn main() {
     //TODO: Add excecise names
     println!("------FIRST UNIT-----");
     println!("(1) 1.1 => Basic aritmethics [IN PROGRESS]");
-    println!("(2) 1.2");
-    println!("(3) 1.3");
-    println!("(4) 1.4");
-    println!("(5) 1.5");
+    println!("(2) 1.2 => Repeat your name 4 times [IN PROGRESS]");
+    println!("(3) 1.3 => Triangle/Pentagon formulas [IN PROGRESS]");
+    println!("(4) 1.4 => Circle formula [IN PROGRESS]");
+    println!("(5) 1.5 => Currency exchange [IN PROGRESS]");
     println!("------SECOND UNIT----");
     println!("(6) 2.1");
     println!("(7) 2.2");
