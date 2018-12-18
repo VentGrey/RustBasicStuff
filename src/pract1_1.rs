@@ -7,24 +7,42 @@ use std::io;
 pub fn main() {
     let mut scanner = String::new();
 
+    let mut sum: f64 = 0.0;
+
     io::stdin()
         .read_line(&mut scanner)
         .expect("Something went wrong when reading user input");
 
-    let num_1 = scanner.trim();
+    let mut num_1 = scanner.trim();
 
     match num_1.parse::<f64>() {
-        Ok(i) => {}
+        Ok(num_1) => {
+            println!("Number 1 registered correctly! {}", num_1);
+        }
         Err(e) => {
-            println!("This is not a number {}", num_1);
-            println!("Error: {}", e.to_string());
+            eprintln!("This is not a number {}", num_1);
+            eprintln!("Error: {}", e.to_string());
         }
     }
 
-    scanner = String::new();
+    let mut scanner = String::new();
     io::stdin()
         .read_line(&mut scanner)
         .expect("Something went wrong when reading user input");
+
+    let num_2 = scanner.trim();
+
+    match num_2.parse::<f64>() {
+        Ok(i) => {
+            println!("Number 2 registered correctly! {}", i);
+        }
+        Err(e) => {
+            eprintln!("This is not a number {}", num_2);
+            eprintln!("Error: {}", e);
+        }
+    }
+
+    println!("The sum of {} and {} is: {}", num_1, num_2, sum);
 }
 
 /*
