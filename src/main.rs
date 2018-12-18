@@ -22,6 +22,10 @@ mod pract2_13;
 mod pract2_14;
 //-- 3rd Part Modules
 mod pract3_1;
+//-- 4th Part Modules
+//-- Extra Modules
+//-- Keep learning modules
+
 
 
 use std::io;
@@ -34,7 +38,6 @@ fn main() {
         "These are the current programs in the project, status are\
          reported at the right"
     );
-    //TODO: Add excecise names
     println!("------FIRST UNIT-----");
     println!("(1) 1.1 => Basic aritmethics [IN PROGRESS]");
     println!("(2) 1.2 => Repeat your name 4 times [INCOMPLETE]");
@@ -61,7 +64,6 @@ fn main() {
     println!("------FOURTH UNIT----");
     println!("------EXTRAS---------");
     println!("----KEEP LEARNING----");
-    //TODO: Add the whole sections
     println!("Please select your desired practice to execute:");
 
     let mut usr_input = String::new();
@@ -73,7 +75,7 @@ fn main() {
     match option.parse::<i8>() {
         Ok(i) => {}
         Err(e) => {
-            println!("This is not an integer {}", option);
+            println!("This is not a valid number {}", option);
             println!("Specific error report:");
             println!("Error: {}", e.to_string());
         }
