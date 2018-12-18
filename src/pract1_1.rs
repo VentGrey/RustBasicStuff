@@ -15,7 +15,7 @@ pub fn main() {
         .read_line(&mut scanner)
         .expect("Something went wrong when reading user input");
 
-    let mut num_1 = scanner.trim(); //FIXME: Not mutable
+    let num_1 = scanner.trim();
 
     match num_1.parse::<f64>() {
         Ok(num_1) => {
