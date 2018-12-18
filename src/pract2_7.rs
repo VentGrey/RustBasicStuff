@@ -13,7 +13,7 @@ fn main() {
 
         let num2:i32 = input_2.parse().unwrap();
 
-        if num1 % num2 == 0.0 {
+        if num1 % num2 == 0 {
                 println!("Numbers can be divided");
         } else {
             panic!("Numbers cannot be divided");
