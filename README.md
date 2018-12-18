@@ -9,12 +9,13 @@ que se le puedan dar al lenguaje.
 
 ## Herramientas:
 
-* Rust `v: 1.30.0-nightly` ID: `887690686 2018-09-27`
-* Cargo `v: cargo 1.31.0-nightly` ID: `(de314a8b2 2018-09-21)`
-* RLS `v: 0.130.5` ID: `(9e28646 2018-09-26)`
+* Rust `v: 1.33.0-nightly` ID: `adbfec229 2018-12-17`
+* Cargo `v: cargo 1.33.0-nightly` ID: `(2cf1f5dda 2018-12-11)`
+* RLS `v: 1.31.6` ID: `(bd5b899 2018-12-10)`
 
 ## To Do
 
-- [] Hacer el repositorio interactivo para aquellos que deseen practicar
+- [] Hacer el repositorio interactivo para aquellos que deseen practicar.
 - [] Terminar las prácticas.
-
+- [] Crear un menú principal para correr las prácticas.
+- [] Crear un mdbook para quienes deseen aprender Rust con las prácticas.
