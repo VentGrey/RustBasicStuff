@@ -13,7 +13,7 @@ fn main() {
     let mut sum:i64 = 0;
 
     for i in 0..n {
-        sum = sum + i;
+        sum += i;
     }
 
     println!("La suma de los {} números naturales es: {}", n, sum);
