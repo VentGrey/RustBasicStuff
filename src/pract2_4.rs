@@ -14,7 +14,7 @@ fn main() {
     println!("Input B");
     io::stdin().read_line(&mut input_1).unwrap();
 
-    let b:i32 = input1.parse().unwrap();
+    let b:i32 = input_1.parse().unwrap();
 
     
     let mut input_2 = String::new();
@@ -36,8 +36,8 @@ fn main() {
         panic!("You cannot divide by zero!");
     }
 
-    println!("Result: {}",( ((a - c, 2).pow(2)) / d));
-    println!("Result: {}",( ((a - b, 2) ).pow(2) / d));
-
-
+    /* FIXME: No way to apply power ATM
+    *println!("Result: {}",( ((a - c, 2).pow(2)) / d));
+    *println!("Result: {}",( ((a - b, 2) ).pow(2) / d));
+    */
 }
