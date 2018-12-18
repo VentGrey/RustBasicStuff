@@ -97,13 +97,13 @@ fn main() {
                     println!("You have to pay ${}", precio);
                 } else if mins <= 4.0 {
                     precio = 3.9;
-                    precio = precio * mins;
+                    precio *= mins;
                     println!("You have to pay ${}", precio);
                 } else {
                     panic!("Something is wrong!!");
                 }
         }
-        _ => panic!("Invalid option");
+        _ => panic!("Invalid option"),
 
     }
 }
