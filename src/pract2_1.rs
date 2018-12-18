@@ -2,7 +2,6 @@
 //Exit only works on Linux ATM
 use std::io;
 use std::f64;
-use std::process;
 
 fn main() {
 
@@ -13,14 +12,14 @@ fn main() {
     let angle: f64 = input.trim().parse().unwrap();
 
     if angle.cos() != 0.0 {
-        let tang:f64 = angulo.sin() / angulo.cos();
+        let tang:f64 = angle.sin() / angle.cos();
         println!("Tangent is equal to: {}", tang);
 
         if angle.sin() != 0.0 {
             let cot:f64 = angle.cos() / angle.sin();
 
-        if angulo.sin() != 0.0 {
-            let cot:f64 = angulo.cos() / angulo.sin();
+        if angle.sin() != 0.0 {
+            let cot:f64 = angle.cos() / angle.sin();
 
             println!("Cotangent is equal to: {}", cot);
         } else {
