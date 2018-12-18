@@ -4,8 +4,9 @@ In this repository I will upload some very basic exercises that I'm
 currently solving. The purpose is very simple: train and master to some
 extent the limits of the Rust programming language.
 
-El repositorio no es nada serio, solo algo para comprobar avances y usos
-que se le puedan dar al lenguaje.
+This repository is merely a work in progress and it's maintained by hobby
+however, you can submit exercise ideas, corrections or anything that you
+consider "necessary" to help other people learn Rust the easy way.
 
 ## Tools:
 
@@ -34,7 +35,8 @@ que se le puedan dar al lenguaje.
 * Racer `v 2.1.14` NOID (Requires: **Nightly channel**)
 
 ## To Do
-
+- [ ] Fully translate to english the whole repo.
+- [ ] Make a fancy-looking main readme to lure people in here.
 - [ ] Hacer el repositorio interactivo para aquellos que deseen practicar.
 - [ ] Terminar las prácticas.
 - [ ] Crear un menú principal para correr las prácticas.
