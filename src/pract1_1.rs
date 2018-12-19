@@ -20,6 +20,7 @@ pub fn main() {
     match num_1.parse::<f64>() {
         Ok(num_1) => {
             println!("Number 1 registered correctly! {}", num_1);
+            sum += num_1;
         }
         Err(e) => {
             eprintln!("This is not a number {}", num_1);
@@ -35,8 +36,9 @@ pub fn main() {
     let num_2 = scanner.trim();
 
     match num_2.parse::<f64>() {
-        Ok(i) => {
-            println!("Number 2 registered correctly! {}", i);
+        Ok(num_2) => {
+            println!("Number 2 registered correctly! {}", num_2);
+            sum += num_2;
         }
         Err(e) => {
             eprintln!("This is not a number {}", num_2);
