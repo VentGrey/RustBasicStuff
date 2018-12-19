@@ -41,11 +41,11 @@ pub fn main() {
             sum += num_2;
         }
         Err(e) => {
-            eprintln!("This is not a number {}", num_2);
+            eprintln!("This is not a number {}", num_2.red());
             eprintln!("Error: {}", e);
             panic!("Cannot recover from error, exiting");
         }
     }
 
-    println!("The sum of {} and {} is: {}", num_1, num_2, sum);
+    println!("The sum of {} and {} is: {}", num_1.blue(), num_2.blue(), sum);
 }
