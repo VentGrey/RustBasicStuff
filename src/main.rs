@@ -75,6 +75,6 @@ fn main() {
 
     match option {
         1 => pract1_1::main(),
-        
+        _ => panic!("Input error!"),
     }
 }
