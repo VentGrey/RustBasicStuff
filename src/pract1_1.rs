@@ -2,11 +2,10 @@
 and calculates the addition, substraction and division of both
 numbers */
 
-//TODO: Fix this user input methods
-
 use std::io;
 
 pub fn main() {
+    println!("Please input your first number");
     let mut scanner = String::new();
 
     let mut sum: f64 = 0.0;
@@ -28,6 +27,7 @@ pub fn main() {
         }
     }
 
+    println!("Input yout second number");
     let mut scanner = String::new();
     io::stdin()
         .read_line(&mut scanner)
@@ -48,19 +48,3 @@ pub fn main() {
 
     println!("The sum of {} and {} is: {}", num_1, num_2, sum);
 }
-
-/*
-fn main() {
-    let mut input_text = String::new();
-    io::stdin()
-        .read_line(&mut input_text)
-        .expect("failed to read from stdin");
-
-    let trimmed = input_text.trim();
-    match trimmed.parse::<u32>() {
-        Ok(i) => println!("your integer input: {}", i),
-        Err(..) => println!("this was not an integer: {}", trimmed),
-    };
-}
-
-*/
