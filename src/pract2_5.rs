@@ -18,11 +18,11 @@ pub fn main() {
     if days <= 0 || km <= 0.0 {
         panic!("._. Not funny");
     } else if days > 7 && km > 800.00 {
-        km = km * P_KM;
+        km *= P_KM;
         km = km - (km * 0.30);
         println!("Your total is: ${}", km);
     }
 
-    km = km * P_KM;
+    km *= P_KM;
     println!("Your total is: ${}", km);
 }
