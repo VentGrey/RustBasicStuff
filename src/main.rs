@@ -80,6 +80,25 @@ fn main() {
 
     match option {
         1 => pract1_1::main(),
+        2 => pract1_2::main(),
+        3 => pract1_3::main(),
+        4 => pract1_4::main(),
+        5 => pract1_5::main(),
+        6 => pract2_1::main(),
+        7 => pract2_2::main(),
+        8 => pract2_3::main(),
+        9 => pract2_4::main(),
+        10 => pract2_5::main(),
+        11 => pract2_6::main(),
+        12 => pract2_7::main(),
+        13 => pract2_8::main(),
+        14 => pract2_9::main(),
+        15 => pract2_10::main(),
+        16 => pract2_11::main(),
+        17 => pract2_12::main(),
+        18 => pract2_13::main(),
+        19 => pract2_14::main(),
+        20 => pract3_1::main(),
         _ => panic!("Input error!"),
     }
 }
