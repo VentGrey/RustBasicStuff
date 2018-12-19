@@ -71,13 +71,10 @@ fn main() {
         .read_line(&mut usr_input)
         .expect("Failed to read from stdin library");
 
-    let option = usr_input.trim();
-    match option.parse::<i8>() {
-        Ok(i) => {}
-        Err(e) => {
-            println!("This is not a valid number {}", option);
-            println!("Specific error report:");
-            println!("Error: {}", e.to_string());
-        }
+    let option:i32 = usr_input.trim().parse().unwrap();
+
+    match option {
+        1 => pract1_1::main(),
+        
     }
 }
