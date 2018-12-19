@@ -1,7 +1,7 @@
 /* Write a program that takes two numbers from the user input
 and calculates the addition, substraction and division of both
 numbers */
-
+use colored::*;
 use std::io;
 
 pub fn main() {
@@ -23,7 +23,7 @@ pub fn main() {
         }
         Err(e) => {
             eprintln!("This is not a number {}", num_1);
-            eprintln!("Error: {}", e.to_string());
+            eprintln!("Error: {}", e.to_string().red());
         }
     }
 
