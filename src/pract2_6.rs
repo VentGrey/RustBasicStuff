@@ -1,4 +1,3 @@
-use colored::*;
 use std::io;
 
 pub fn main() {
