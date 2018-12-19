@@ -1,3 +1,4 @@
+// Ask the user for his/her name and print it 3 times
 use std::io;
 
 pub fn main() {

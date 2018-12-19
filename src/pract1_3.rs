@@ -3,7 +3,9 @@ use std::io;
 pub fn main() {
     let mut input = String::new();
     println!("Input the triangle's base / Pentagon's height");
-    io::stdin().read_line(&mut input).unwrap();
+    io::stdin()
+    .read_line(&mut input)
+    .expect("Failed to read from stdin");
 
     //Variable de asignación
     let base: f64 = input.trim().parse().unwrap();
