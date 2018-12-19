@@ -43,6 +43,7 @@ pub fn main() {
         Err(e) => {
             eprintln!("This is not a number {}", num_2);
             eprintln!("Error: {}", e);
+            panic!("Cannot recover from error, exiting");
         }
     }
 
