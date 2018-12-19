@@ -1,3 +1,5 @@
+//---External crates
+extern crate colored;
 //---Modules spam, brace yourselves!
 //-- 1st Part Modules
 mod pract1_1;
@@ -26,8 +28,10 @@ mod pract3_1;
 //-- Extra Modules
 //-- Keep learning modules
 
+//-- External imports
+use colored::*; // <-- Namespace violation, don't do this please
 
-
+//-- Standard imports
 use std::io;
 
 fn main() {
