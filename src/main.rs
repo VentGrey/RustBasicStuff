@@ -45,7 +45,7 @@ fn main() {
     );
     println!("------FIRST UNIT-----");
     println!("(1) 1.1 => Basic aritmethics\
-     [{}]", "IN PROGRESS".yellow());
+     [{}]", "COMPLETE".green());
     println!("(2) 1.2 => Repeat your name 4 times [{}]", "INCOMPLETE".red());
     println!("(3) 1.3 => Triangle/Pentagon formulas [{}]", "INCOMPLETE".red());
     println!("(4) 1.4 => Circle formula [{}]", "INCOMPLETE".red());
