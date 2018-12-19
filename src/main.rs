@@ -46,9 +46,9 @@ fn main() {
     println!("(1) 1.1 => Basic aritmethics\
      [{}]", "IN PROGRESS".yellow());
     println!("(2) 1.2 => Repeat your name 4 times [{}]", "INCOMPLETE".red());
-    println!("(3) 1.3 => Triangle/Pentagon formulas [INCOMPLETE]");
-    println!("(4) 1.4 => Circle formula [INCOMPLETE]");
-    println!("(5) 1.5 => Currency exchange [INCOMPLETE]");
+    println!("(3) 1.3 => Triangle/Pentagon formulas [{}]", "INCOMPLETE".red());
+    println!("(4) 1.4 => Circle formula [{}]", "INCOMPLETE".red());
+    println!("(5) 1.5 => Currency exchange [{}]", "INCOMPLETE".red());
     println!("------SECOND UNIT----");
     println!("(6) 2.1 => Angle processing [INCOMPLETE]");
     println!("(7) 2.2 => Basic money discount [INCOMPLETE]");
