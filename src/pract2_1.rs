@@ -16,10 +16,6 @@ pub fn main() {
     if angle.cos() != 0.0 {
         let tang:f64 = angle.sin() / angle.cos();
         println!("Tangent is equal to: {}", tang);
-//FIXME: Curly braces mess
-        if angle.sin() != 0.0 {
-            let cot:f64 = angle.cos() / angle.sin();
-        }
         if angle.sin() != 0.0 {
             let cot:f64 = angle.cos() / angle.sin();
             println!("Cotangent is equal to: {}", cot);
@@ -27,5 +23,6 @@ pub fn main() {
             panic!("Angle sin cannot be zero >:c");
         } else {
         panic!("Cosine must be different from zero >:c");
+        }
     }
-}}
+}
