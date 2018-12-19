@@ -15,7 +15,7 @@ Observe que las categorías mayores a 4 no tienen descuento
 */
 use std::io;
 
-fn main() {
+pub fn main() {
     let mut input = String::new();
     println!("Bienvenido al hospital, ingrese la categoría de su tarjeta");
     io::stdin().read_line(&mut input).unwrap();

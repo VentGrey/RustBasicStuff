@@ -1,11 +1,11 @@
 use std::io;
 
-fn main() {
+pub fn main() {
     let mut input = String::new();
     println!("Input the actual temperature");
     io::stdin().read_line(&mut input).unwrap();
 
-    let temp:f64 = input.parse().unwrap();
+    let temp: f64 = input.parse().unwrap();
 
     if temp > 85.00 {
         println!("You should go swimming");

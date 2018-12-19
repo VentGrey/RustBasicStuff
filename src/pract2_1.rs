@@ -5,7 +5,7 @@ use std::f64;
 
 
 
-fn main() {
+pub fn main() {
 
     let mut input = String::new();
     println!("Input some angle value");

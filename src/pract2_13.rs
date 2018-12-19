@@ -1,6 +1,6 @@
 use std::io;
 
-fn main() {
+pub fn main() {
     let mut input = String::new();
 
     println!("Insert the specified region code you wish to call");

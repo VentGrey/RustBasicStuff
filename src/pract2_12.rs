@@ -1,6 +1,6 @@
 use std::io;
 
-fn main() {
+pub fn main() {
     let mut input = String::new();
     println!("Enter the amount of units you wish to convert");
     io::stdin().read_line(&mut input).unwrap();

@@ -1,6 +1,6 @@
 use std::io;
 
-fn main() {
+pub fn main() {
     let mut input = String::new();
     println!("Input the first number");
     io::stdin().read_line(&mut input).unwrap();
@@ -9,13 +9,13 @@ fn main() {
     println!("Input the second number");
     io::stdin().read_line(&mut input_1).unwrap();
 
-    let num1:f64 = input.parse().unwrap();
-    let num2:f64 = input_1.parse().unwrap();
+    let num1: f64 = input.parse().unwrap();
+    let num2: f64 = input_1.parse().unwrap();
 
     let mut input_2 = String::new();
     io::stdin().read_line(&mut input_2).unwrap();
 
-    let operador:char = input.parse().unwrap();
+    let operador: char = input.parse().unwrap();
 
     match operador {
         '+' => println!("The sum of the numbers is: {}", num1 + num2),

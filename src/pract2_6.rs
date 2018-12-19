@@ -1,6 +1,6 @@
 use std::io;
 
-fn main() {
+pub fn main() {
     let mut input = String::new();
     println!("Input worker salary");
     io::stdin().read_line(&mut input).unwrap();
