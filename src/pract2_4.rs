@@ -1,4 +1,3 @@
-use std::i32;
 use std::io;
 
 pub fn main() {
@@ -30,8 +29,7 @@ pub fn main() {
         panic!("You cannot divide by zero!");
     }
 
-    /* FIXME: No way to apply power ATM
-     *println!("Result: {}",( ((a - c, 2).pow(2)) / d));
-     *println!("Result: {}",( ((a - b, 2) ).pow(2) / d));
-     */
+    // FIXME: No way to apply power ATM
+     println!("Result: {}",(((a - c, 2).pow(2)) / d));
+     println!("Result: {}",((a - b, 2).pow(2) / d));
 }
