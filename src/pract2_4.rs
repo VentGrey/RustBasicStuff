@@ -29,7 +29,8 @@ pub fn main() {
         panic!("You cannot divide by zero!");
     }
 
+    let mut result_1: i32 = (a - c).pow(2);
+    result_1 /= 2;
+
     // FIXME: No way to apply power ATM
-     println!("Result: {}",(((a - c, 2).pow(2)) / d));
-     println!("Result: {}",((a - b, 2).pow(2) / d));
 }
