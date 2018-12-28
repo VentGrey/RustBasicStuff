@@ -35,9 +35,9 @@ consider "necessary" to help other people learn Rust the easy way.
 * Racer `v 2.1.14` NOID (Requires: **Nightly channel**)
 
 ## To Do
-- [ ] Fully translate to english the whole repo.
+- [x] Fully translate to english the whole repo.
 - [ ] Make a fancy-looking main readme to lure people in here.
-- [ ] Hacer el repositorio interactivo para aquellos que deseen practicar.
-- [ ] Terminar las prácticas.
-- [ ] Crear un menú principal para correr las prácticas.
-- [ ] Crear un mdbook para quienes deseen aprender Rust con las prácticas.
+- [ ] Make this repo interactive for users who wish to practice. 
+- [ ] Finish practices.
+- [x] Create a main menu to choose which practice to run.
+- [ ] Create an mdbook segment to help read and understand practices.
