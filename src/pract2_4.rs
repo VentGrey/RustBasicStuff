@@ -30,7 +30,12 @@ pub fn main() {
     }
 
     let mut result_1: i32 = (a - c).pow(2);
-    result_1 /= 2;
+    result_1 /= d;
+
+    let mut result_2: i32 = (a - b).pow(2);
+    result_2 /= d;
 
     // FIXME: No way to apply power ATM
+    println!("First equation result: {}", result_1);
+    println!("Second equation result: {}", result_2);
 }
