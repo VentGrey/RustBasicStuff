@@ -47,5 +47,10 @@ pub fn main() {
         }
     }
 
-    println!("The sum of {} and {} is: {}", num_1.blue(), num_2.blue(), sum);
+    println!(
+        "The sum of {} and {} is: {}",
+        num_1.blue(),
+        num_2.blue(),
+        sum
+    );
 }
