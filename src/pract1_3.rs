@@ -18,6 +18,16 @@ pub fn main() {
             Ok(num1) => num1,
             Err(_) => continue,
         };
+
+        let mut base2 = String::new();
+        io::stdin()
+            .read_line(&mut base2)
+            .expect("Failed to read from stdin");
+
+        let base2: f64 = match base2.trim().parse() {
+            Ok(num2) => num2,
+            Err(_) => continue,
+        };
     }
 }
 
