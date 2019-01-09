@@ -15,7 +15,7 @@ pub fn main() {
             .expect("Failed to read from stdin");
 
         let base: f64 = match base.trim().parse() {
-            Ok(num1) => num1,
+            Ok(num) => num,
             Err(_) => continue,
         };
 
@@ -25,7 +25,7 @@ pub fn main() {
             .expect("Failed to read from stdin");
 
         let base2: f64 = match base2.trim().parse() {
-            Ok(num2) => num2,
+            Ok(num) => num,
             Err(_) => continue,
         };
     }
