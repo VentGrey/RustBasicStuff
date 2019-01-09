@@ -1,7 +1,28 @@
+extern crate colored;
+
+use colored::*;
 use std::io;
 
 pub fn main() {
-    let mut input = String::new();
+    println!("{}", "Triangle/Pentagon surface calculator!".yellow());
+
+    loop {
+        println!("Input the triangle's base / pentagon's height");
+        let mut base = String::new();
+
+        io::stdin()
+            .read_line(&mut base)
+            .expect("Failed to read from stdin");
+
+        let base: f64 = match base.trim().parse() {
+            Ok(num1) => num1,
+            Err(_) => continue,
+        };
+    }
+}
+
+/*
+     let mut input = String::new();
     println!("Input the triangle's base / Pentagon's height");
     io::stdin()
     .read_line(&mut input)
@@ -20,4 +41,4 @@ pub fn main() {
     //Hacer las operaciones de las prácticas
     println!("The triangle's area is: {}", (base * height) / 2.0);
     println!("The pentagon's area is: {}", (base * 5.0) * height);
-}
+}*/
