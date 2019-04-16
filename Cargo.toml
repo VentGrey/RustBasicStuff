@@ -1,8 +1,0 @@
-[package]
-name = "practicas_basicas"
-version = "0.1.0"
-authors = ["VentGrey <omarpurataf@gmail.com>"]
-edition = "2018"
-
-[dependencies]
-colored = "1.7.0"
