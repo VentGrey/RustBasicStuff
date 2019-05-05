@@ -2,6 +2,7 @@ mod basic;
 mod circle;
 mod divisas;
 mod cambiomedidas;
+mod interesban;
 
 use std::io;
 
@@ -12,6 +13,7 @@ fn main() {
     println!("2- Área y perímetro del círculo");
     println!("3- Cambio de divisas");
     println!("4- Cambio de medidas");
+    println!("5- Interes bancario");
 
     let mut entrada = String::new();
     io::stdin().read_line(&mut entrada).unwrap();
@@ -22,6 +24,7 @@ fn main() {
         2 => circle::circle(),
         3 => divisas::divisas(),
         4 => cambiomedidas::cambio(),
+        5 => interesban::interes(),
         _ => panic!("Error de entrada D:"),
     }
 }
