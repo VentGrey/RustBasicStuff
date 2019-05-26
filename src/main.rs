@@ -35,6 +35,7 @@ fn basic() {
         Err(_) => panic!("Not a number!"),
     };
 
+    println!("Ingrese el segundo número flotante");
     let mut num2 = String::new();
     io::stdin()
         .read_line(&mut num2)
