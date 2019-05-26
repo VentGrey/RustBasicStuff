@@ -24,7 +24,7 @@ fn main() {
 }
 
 fn basic() {
-    println!("Ingrese el primer número (en formato flotante)");
+    println!("Please input a first number");
     let mut num1 = String::new();
     io::stdin()
         .read_line(&mut num1)
@@ -35,7 +35,7 @@ fn basic() {
         Err(_) => panic!("Not a number!"),
     };
 
-    println!("Ingrese el segundo número flotante");
+    println!("Please input another number");
     let mut num2 = String::new();
     io::stdin()
         .read_line(&mut num2)
