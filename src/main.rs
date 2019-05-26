@@ -6,7 +6,20 @@ fn main() {
     println!("1 - Basic operations");
 
     //-- Menu processing
-    let mut op = String::new();
+    let mut input = String::new();
+    io::stdin()
+        .read_line(&mut input)
+        .expect("Failed to read from stdin");
+
+    let option: u32 = input.trim().parse().unwrap();
+
+    match option {
+        1 => basic(),
+        _ => {
+            println!("Option not available! Returning to main...");
+            main();
+        },
+    }
 
 }
 
