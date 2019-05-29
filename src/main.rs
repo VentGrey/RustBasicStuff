@@ -51,3 +51,7 @@ fn basic() {
     println!("The product of the numbers equals to: {}", num1 * num2);
     println!("The division of the numbers equals to: {}", num1 / num2);
 }
+
+fn circle() {
+    println!("Please input your circle's radius")
+}
