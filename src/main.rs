@@ -1,9 +1,11 @@
 use std::io;
+use std::f64::consts::PI;
 
 fn main() {
     //-- MENU
     println!("Please select an exercise to execute:");
     println!("1 - Basic operations");
+    println!("2 - Circle");
 
     //-- Menu processing
     let mut input = String::new();
@@ -15,6 +17,7 @@ fn main() {
 
     match option {
         1 => basic(),
+        2 => circle(),
         _ => {
             println!("Option not available! Returning to main...");
             main();
@@ -53,5 +56,17 @@ fn basic() {
 }
 
 fn circle() {
-    println!("Please input your circle's radius")
+    println!("Please input your circle's radius");
+    let mut rad = String::new();
+    io::stdin()
+        .read_line(&mut rad)
+        .expect("Could not read from stdin");
+
+    let rad: f64 = match rad.trim().parse() {
+        Ok(num) => num,
+        Err(_) => panic!("Not a number!"),
+    };
+
+    println!("The area of the circle is equal to: {}", rad * PI * PI);
+    println!("The perimeter of the circle is equal to: {}", (2.0 * rad) * PI);
 }
