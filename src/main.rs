@@ -23,7 +23,6 @@ fn main() {
             main();
         },
     }
-
 }
 
 fn basic() {
