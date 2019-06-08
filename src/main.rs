@@ -21,6 +21,7 @@ fn main() {
         1 => basic(),
         2 => circle(),
         3 => exchange(),
+        4 => measurements(),
         _ => {
             println!("Option not available! Returning to main...");
             main();
@@ -90,4 +91,21 @@ fn exchange() {
     };
 
     println!("You possess {} mxn", mxn * d_value);
+}
+
+fn measurements() {
+    const HECT_VAL:f64 = 0.404686;
+
+    let mut acres = String::new();
+    println!("Input the number of acres you wish to convert");
+    io::stdin()
+        .read_line(&mut acres)
+        .expect("Failed to read from stdin");
+
+    let acres: f64 = match acres.trim().parse() {
+        Ok(num) => num,
+        Err(_) => panic!("Not a number!"),
+    };
+
+    println!("You possess {:.2} hectares", acres * HECT_VAL);
 }
