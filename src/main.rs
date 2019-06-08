@@ -1,11 +1,13 @@
 use std::io;
 use std::f64::consts::PI;
+use rand::Rng;
 
 fn main() {
     //-- MENU
     println!("Please select an exercise to execute:");
     println!("1 - Basic operations");
     println!("2 - Circle");
+    println!("3 - Currency exchange");
 
     //-- Menu processing
     let mut input = String::new();
@@ -18,6 +20,7 @@ fn main() {
     match option {
         1 => basic(),
         2 => circle(),
+        3 => exchange(),
         _ => {
             println!("Option not available! Returning to main...");
             main();
@@ -68,4 +71,22 @@ fn circle() {
 
     println!("The area of the circle is equal to: {}", rad * PI * PI);
     println!("The perimeter of the circle is equal to: {}", (2.0 * rad) * PI);
+}
+
+fn exchange() {
+    // Generate the random "dollar" value
+    let mut rng = rand::thread_rng();
+    let d_value = rng.gen_range(17.0, 20.0);
+
+    let mut mxn = String::new();
+    io::stdin()
+        .read_line(&mut mxn)
+        .expect("Failed to read from stdin");
+
+    let mxn: f64 = match mxn.trim().parse() {
+        Ok(num) => num,
+        Err(_) => panic!("Not a number!"),
+    };
+
+    println!("You possess {} mxn", mxn * d_value);
 }
