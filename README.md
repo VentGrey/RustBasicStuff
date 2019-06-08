@@ -9,8 +9,7 @@ keep the explanaitions in separate jupyter notebooks.
 This is still a work in progress.
 
 # Index
-* [Cheatsheet
-  notebook](https://github.com/VentGrey/easy-rust/blob/master/Cheatsheet.ipynb)
+
 ---
 ## Modules
 * [Basic Operations
