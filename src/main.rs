@@ -78,6 +78,7 @@ fn exchange() {
     let mut rng = rand::thread_rng();
     let d_value = rng.gen_range(17.0, 20.0);
 
+    println!("Please input the amount of USD to convert");
     let mut mxn = String::new();
     io::stdin()
         .read_line(&mut mxn)
