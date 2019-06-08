@@ -52,10 +52,10 @@ fn basic() {
         Err(_) => panic!("Not a number!"),
     };
 
-    println!("The sum of the numbers equals to: {}", num1 + num2);
-    println!("The diff of the numbers equals to: {}", num1 - num2);
-    println!("The product of the numbers equals to: {}", num1 * num2);
-    println!("The division of the numbers equals to: {}", num1 / num2);
+    println!("The sum of the numbers equals to: {:.2}", num1 + num2);
+    println!("The diff of the numbers equals to: {:.2}", num1 - num2);
+    println!("The product of the numbers equals to: {:.2}", num1 * num2);
+    println!("The division of the numbers equals to: {:.2}", num1 / num2);
 }
 
 fn circle() {
@@ -70,8 +70,8 @@ fn circle() {
         Err(_) => panic!("Not a number!"),
     };
 
-    println!("The area of the circle is equal to: {}", rad * PI * PI);
-    println!("The perimeter of the circle is equal to: {}", (2.0 * rad) * PI);
+    println!("The area of the circle is equal to: {:.2}", rad * PI * PI);
+    println!("The perimeter of the circle is equal to: {:.2}", (2.0 * rad) * PI);
 }
 
 fn exchange() {
@@ -90,7 +90,7 @@ fn exchange() {
         Err(_) => panic!("Not a number!"),
     };
 
-    println!("You possess {} mxn", mxn * d_value);
+    println!("You possess {:.2} mxn", mxn * d_value);
 }
 
 fn measurements() {
